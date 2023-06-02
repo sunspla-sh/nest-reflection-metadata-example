@@ -21,4 +21,8 @@ export class CatsService {
   create(newCat: Cat) {
     this.catsArray = [...this.catsArray, newCat];
   }
+
+  createAll(newCats: Array<Cat>) {
+    this.catsArray = [...this.catsArray, ...newCats];
+  }
 }
